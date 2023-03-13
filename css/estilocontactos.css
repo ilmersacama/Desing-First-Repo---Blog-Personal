@@ -1,0 +1,28 @@
+/* CSS Document */
+#registro{color:#000000;
+	font-size:38px;
+	font-family:"Times New Roman", Times, serif;
+	
+	}
+#reg, p {
+	color:#000066;
+	font-family:"Times New Roman", Times, serif;
+	font-size:18px;
+	}
+#requerido {
+	color:#FF0000;
+	font-weight:bold;
+	}
+legend{
+	color:#3300FF;
+	font-size:18px;
+	font-weight:bold;
+	}
+
+label {
+	color:#333333;
+	font-family:Geneva, Arial, Helvetica, sans-serif;
+	font-size:14px;
+	text-align:left;
+	display:block;
+	}

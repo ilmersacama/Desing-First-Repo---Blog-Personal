@@ -1,0 +1,330 @@
+/* CSS Document */
+
+/*--------CREAR LA PAGINA PRINCIPAL-----------*/
+html{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+	text-align:center;
+    vertical-align: baseline;
+	}
+body{
+	background:#0066FF url(../images/nubes1.jpg) no-repeat;
+	font-family:Arial, Helvetica, sans-serif;
+	text-align:center;
+	margin:0;
+	padding:0;
+
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align:middle;
+	}
+/*---------DISEÑAR LAYOUT---------------------*/
+#contenedor {
+	width:960px;
+	margin:10px 50px 5px 90px;
+	padding:0;
+	text-align:left;
+	}
+#cabecera {
+	font-family:Arial, Helvetica, sans-serif;
+	background:#003399 url("../images/cielo.jpg") 70% 60% no-repeat;
+	background-size:100% 400%;
+	height:150px;
+	padding:0;
+	padding-right:50px;
+	margin:0;
+	color:yellow;
+	font-size:60px;
+	text-align:right;
+	text-shadow:2px 2px 1px rgba(255, 255, 255, 1);
+	line-height:100px;
+	/*vertical-align:text-bottom;*/
+	border-radius:5px;
+	clear:both;
+	}
+	/*---------------MENU DE NAVEGACION----------------*/
+nav#imagen{	background: url("../images/menu3.png") 0 0 no-repeat;}
+#menu {
+	height:20px;
+	margin:0;
+	padding:20px;
+	list-style-type:none;
+	}
+#menu li{
+	display:block;
+	list-style-type:none;
+	float:left;
+	margin:0;
+	padding:0;
+	position:relative;
+	
+	}
+#menu li a {
+	font-family:Arial, Helvetica, sans-serif;
+	margin:0;
+	padding:0 10px 0 10px;
+	font-size:14px;
+	color:#FFFFFF;
+	text-decoration:none;
+	font-weight:10px;
+	line-height:20px;
+	letter-spacing:3px;
+	display:block;
+	border-right:#0066CC 2px solid;
+	}
+#menu li a:link {color:#FFFFFF;
+		}
+#menu li a:active {color:#000099;}
+#menu li a:visited {color:#FFFFFF;
+		text-decoration:none;
+		}
+
+#menu li a:hover {
+	background-color:#00CCCC;
+	color:#003399;
+	text-decoration:underline;
+	}
+	
+	#links a:visited{
+	color:#3399FF;
+	text-decoration:none;}
+/*---------------fdfdsfdsf*-------------*/
+	/*eliminar bordes inicial y final*/
+	#menu li:first-child a {border-left:none;}
+	#menu li:last-child a{border-right:none;}
+	
+#menu ul{
+	margin:0;
+	padding:0;
+	opacity:0;
+	position:absolute;
+	border-radius:0 0 5px 5px;
+	left:0;
+	top:30px;
+	background:#0099CC;
+	/*background:-moz-linear-gradient(#0099CC,#555);
+	background:-webkit-linear-gradient(#0099CC,#555);
+	background:-o-linear-gradient(#0099CC,#555);
+	background:-ms-linear-gradient(#0099CC,#555);
+	background:linear-gradient(#0099CC,#555);
+	/*list-style-type:none;*/
+	/*-moz-transition:opacity .25s ease .1s;
+	-webkit-transition:opacity .25s ease .1s;
+	-o-transition:opacity .2s ease .1s;
+	-ms-transition:opacity .2s ease .1s;
+	transition:opacity .2s ease .1s;*/
+	}
+	/*--visible cuando el mouse esta encima---*/
+#menu li:hover ul{opacity:1;}
+
+#menu ul li{
+	margin:0 0 0 15px;
+	padding:0;
+	height:0;
+	overflow:visible;
+	/*list-style-type:none;*/
+	
+		/*animar la visibilidad*/
+	-moz-transition:height .25s ease .1s;
+	-webkit-transition:height .25s ease .1s;
+	-o-transition:height .2s ease .1s;
+	-ms-transition:height .2s ease .1s;
+	transition:height .2s ease .1s;
+	}
+#menu li:hover ul li{
+	height:30px;
+	width:280px;
+	overflow:visible;
+	padding:0;
+	}
+#menu ul li a {
+	margin:0;
+	padding:5px 0px 5px 10px;
+	border:none;
+	border-bottom:1px #111 solid;
+	width:270px;
+	cursor:pointer;
+	}
+	
+	/*sin borde al final*/
+	#menu ul li:last-child a {border:none;}
+	
+	<!------------CONTENIDO------------------------>
+.seccion {
+	background-color:#666666;
+	width:100%;
+	margin:0;
+	padding:0;
+	
+	}
+.contenido h1#titulo{
+	font-family:"Eras Bold ITC", "Arial Black";
+	font-size:35px;
+	color:#0066CC;}
+.contenido {
+	background:#FFFFFF;
+	color:#333333;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:16px;
+	text-align:left;
+	border:0;
+	margin:0;
+	padding:5px 50px;
+	width:60%;
+	height:650px;
+	float:left;
+	border-top-left-radius:10px;
+	line-height:25px;
+	list-style-image:url(../images/ok.png);
+	}
+	
+	<!-------------------formacion academica--------------------->
+	
+	div.estud{
+	display:block;
+	width:100%;
+	}
+	div.mencion{
+	display:block;
+	border:0;
+	padding:0;
+	margin:0;
+	width:40%;
+	float:left;
+	}
+	div.desa{
+	display:block;
+	border:0;
+	padding:0;
+	margin:0;
+	width:60%;
+	float:left;
+	}
+	<!---------------------trabajos realizados-------------->
+	div.estud{
+	display:block;
+	width:100%;
+	}
+	div.lab{
+	display:block;
+	border:0;
+	padding:0;
+	margin:0;
+	width:40%;
+	float:left;
+	}
+	div.trab{
+	display:block;
+	border:0;
+	padding:0;
+	margin:0;
+	width:60%;
+	float:left;
+	}
+.lateral {
+	background:#FFFFCF;
+	color:#666666;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:15px;
+	text-align:left;
+	border:0;
+	margin:0;
+	padding:5px 5px 5px 10px;
+	float:left;
+	width:28%;
+	height:650px;
+	border-top-right-radius:10px;
+	}
+
+div.form{
+	color:#000000;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:20px;
+	text-align:left;
+	border:10px 10px;
+	margin:20px 80px;
+	float:left;}
+div.reg{
+	color:#000000;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:20px;
+	text-align:left;
+	border:10px 10px;
+	margin:20px 80px;
+	float:right;}
+div.perfil h1{
+	color:#FF0033;
+	font-size:30px;
+	text-align:center;
+	}
+
+div.perfil{
+	color:#00FF33;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:15px;
+	text-align:left;
+	border:10px 10px;
+	margin:0 10px;
+	float:left;
+	}
+div.perfil {
+	color:#CC6633;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:15px;
+	text-align:left;
+	float:left;
+	margin:0 10px;
+	}
+.pie {
+	font-family:"Times New Roman", Times, serif;
+	color:#000099;
+	text-align:center;
+	font-size:25px;
+	padding:20px;
+	clear:both;
+	}
+
+
+	#reg{
+	background-color:#00CCFF;
+	border:#0000CC solid 2px;
+	
+	}
+
+  /* -------------------------EFECTOS PARA EL FORMULARIO---------------------*/
+  .error
+	{
+ 	color:#CC0000; 
+ 	display:none;
+ 	background:#FF9999;
+ 	border:#CC0000 solid 2px;
+	}
+	/* Cambiar el color en el :hover y resaltar los campos en el :focus */
+	input:hover {
+	background-color:transparent;
+	}
+	input:focus {
+	border: 2px solid #E6B700;
+	}
+	textarea:hover {
+	background-color:transparent;
+	}
+	textarea:focus {
+	border: 2px solid #E6B700;
+	}
+	strong{
+	color:red;
+	font-weight:100;
+	}
+	
+	a:visited { 
+	color:#FFFFFF;
+	text-decoration: none; }
+		
+	a:visited { 
+	color:#FFFFFF;
+	text-decoration: none; }
